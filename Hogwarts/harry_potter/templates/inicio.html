@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - Inicio</title>
+    <link rel="stylesheet" href="{% static 'css/Inicio.css' %}">
+    
+    
+</head>
+<body background="{% static '/Images/FondoLogin.jpg' %}">
+    <div class="Texto">
+        <h1  >Bienvenidos a Hogwarts </h1>
+        <h1  >Store</h1>
+    </div>
+    
+    <div class="container">
+        
+        <div class="left">
+            <div class="uno"><div class="uno"><div class="uno"><div class="uno"></div></div></div></div>
+            <div class="dos"><div class="dos"><div class="dos"><div class="dos"></div></div></div></div>
+            <div class="tres"><div class="tres"><div class="tres"><div class="tres"></div></div></div></div>
+            <div class="cuatro"><div class="cuatro"><div class="cuatro"><div class="cuatro"></div></div></div></div>
+        </div>
+        <div class="right">
+            <div class="uno"><div class="uno"><div class="uno"><div class="uno"></div></div></div></div>
+            <div class="dos"><div class="dos"><div class="dos"><div class="dos"></div></div></div></div>
+            <div class="tres"><div class="tres"><div class="tres"><div class="tres"></div></div></div></div>
+            <div class="cuatro"><div class="cuatro"><div class="cuatro"><div class="cuatro"></div></div></div></div>
+        </div>
+        <div>
+            
+        
+             
+        </div>
+    </div>
+
+    
+    <div class="container2">
+        <div class="left">
+            <div class="uno"><div class="uno"><div class="uno"><div class="uno"></div></div></div></div>
+            <div class="dos"><div class="dos"><div class="dos"><div class="dos"></div></div></div></div>
+            <div class="tres"><div class="tres"><div class="tres"><div class="tres"></div></div></div></div>
+            <div class="cuatro"><div class="cuatro"><div class="cuatro"><div class="cuatro"></div></div></div></div>
+        </div>
+        
+        <div class="right">
+            <div class="uno"><div class="uno"><div class="uno"><div class="uno"></div></div></div></div>
+            <div class="dos"><div class="dos"><div class="dos"><div class="dos"></div></div></div></div>
+            <div class="tres"><div class="tres"><div class="tres"><div class="tres"></div></div></div></div>
+            <div class="cuatro"><div class="cuatro"><div class="cuatro"><div class="cuatro"></div></div></div></div>
+            
+        </div>
+        
+        
+    </div>
+
+    <div class="container3">
+
+        <a type="submit" class="submit" href="{% url 'login_user' %}"  value="Enviar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Ingresar
+        </a> 
+
+    </div>
+
+    <div class="container4">
+
+        <a type="submit" class="submit" href=" {% url 'registrar' %}"  value="Enviar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Registrar
+        </a>  
+
+    </div>
+
+
+</body>
+</html>

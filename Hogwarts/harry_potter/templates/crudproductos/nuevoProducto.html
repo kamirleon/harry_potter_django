@@ -1,0 +1,25 @@
+{% extends "../base.html" %}
+
+{% block title %} Nuevo Productos {% endblock %}
+
+{% block body %}
+
+<br><br>
+<h1>
+    Nuevo Producto
+</h1>
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong class="text-dark">{{ message }}</strong>
+</div>
+{% endfor %}
+{% endif %}
+
+
+<div class="container form">
+    {% include 'crudproductos/form.html' %}
+</div>
+
+{% endblock %}

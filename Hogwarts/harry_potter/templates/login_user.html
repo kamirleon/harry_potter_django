@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - Login</title>
+    <link rel="stylesheet" href="{% static 'css/Login.css' %}">
+</head>
+<body background="{%static '/Images/FondoLogin.jpg'%}">
+    <div class="login-box">
+        <h2>Iniciar sesión</h2>
+        <form action="" id="formulario">
+          <div class="user-box">
+            <input type="email" name="correo" id="idCorreo" required>
+            <label for="correo">Correo</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="contrasena" id="idContrasena" required>
+            <label for="contrasena">Contraseña</label>
+          </div>
+           <a type="submit" class="submit" href="" onclick="return enviarFormulario()" value="Enviar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            INGRESAR
+          </a> 
+
+          
+          <br>
+          <br>
+          <div class="link_Ayuda">
+            Olvido Contraseña? <a href="{% url 'recuperar' %}">Clic Aquí</a>
+          </div>
+  
+          <div class="link_Ayuda">
+            No Tiene Cuenta? <a href="{% url 'registrar' %}">
+              Registrar</a>
+          </div>
+        </form>
+        <div id="error"></div>
+      </div>
+      <script src="{%static 'js/Login.js'%}"></script>
+</body>
+</html>
